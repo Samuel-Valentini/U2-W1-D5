@@ -19,6 +19,7 @@ header {
 }
 
 nav {
+  /* position: fixed; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,6 +28,7 @@ nav {
   padding-block: 1rem;
   font-size: 0.9rem;
   font-weight: 450;
+  border-bottom: 1px solid var(--main-black);
 }
 
 nav a {
@@ -58,6 +60,64 @@ nav a:nth-of-type(4) {
   display: none;
 }
 
+header section {
+  display: flex;
+  align-items: center;
+  padding-inline: 1.5rem;
+  height: 438px;
+  border-bottom: 1px solid var(--main-black);
+}
+
+header > section > div:nth-child(1) {
+  max-width: 270px;
+}
+
+/* introduciamo una piccola adattività 
+per evitare che il sottotitolo sia più 
+lungo del titolo negli schermi piccoli*/
+
+@media screen and (min-width: 490px) {
+  header > section > div:nth-child(1) {
+    max-width: 440px;
+  }
+}
+
+/* fine dell'aggiustamento */
+
+header section button {
+  color: white;
+  background-color: var(--main-black);
+  border: 0;
+  padding-inline: 3rem;
+  padding-block: 0.6rem;
+  border-radius: 30px;
+  font-weight: 450;
+  font-size: 1.3rem;
+}
+
+header h2 {
+  font-family: "Spectral", serif;
+  font-size: 5.5rem;
+  font-weight: 500;
+  letter-spacing: -0.3rem;
+  display: inline-block;
+  padding-top: 0.5rem;
+  padding-bottom: 1.4rem;
+}
+
+header p {
+  font-size: 1.5rem;
+  padding-bottom: 3rem;
+}
+
 .repeated-m {
   display: none;
+  position: relative;
+  height: 438px;
+}
+
+.repeated-m > img {
+  height: 435px;
+  transform: translateX(20px);
+  position: absolute;
 }
