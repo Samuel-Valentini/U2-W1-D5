@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Spectral", serif;
+  /* font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100; */
+
+  --main-yellow: #ffc017;
+  --main-black: #191919;
+  --main-green: #1a8917;
+}
+
+.repeated-m {
+  display: none;
+}
