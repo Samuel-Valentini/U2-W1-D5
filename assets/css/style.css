@@ -132,14 +132,24 @@ main {
 
 .repeated-m {
   display: none;
-  position: relative;
+  /* position: relative; */
   height: 438px;
 }
 
 .repeated-m > img {
   height: 435px;
-  transform: translateX(20px);
+  transform: translateX(7px);
   position: absolute;
+  right: -140px;
+}
+
+/* questo aggiustamento serve ad evitare
+ che la grafica si sovrapponga al titolo */
+
+@media screen and (min-width: 920px) {
+  .repeated-m > img {
+    right: 0;
+  }
 }
 
 .trending {
@@ -378,6 +388,10 @@ main {
   background-color: var(--main-green);
 }
 
+.only-desktop {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   nav,
   header section,
@@ -417,5 +431,48 @@ main {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
+  nav,
+  header section,
+  .trending,
+  .second-part {
+    padding-inline: 9rem;
+  }
+
+  .discover,
+  .articles {
+    padding-inline: 0;
+  }
+
+  .trending > div {
+    width: 31%;
+  }
+
+  .trending > div > div:nth-child(2) > div:nth-child(3) {
+    justify-content: flex-start;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .only-desktop {
+    display: block;
+  }
+
+  .second-part {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .articles {
+    flex-basis: 100%;
+  }
+
+  .discover {
+    order: 2;
+    margin-left: 6rem;
+  }
+
+  .articles > div > div:nth-of-type(1) {
+    min-width: 500px;
+  }
 }
