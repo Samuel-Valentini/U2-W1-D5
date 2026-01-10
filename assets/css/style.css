@@ -34,7 +34,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   gap: 30px;
-  padding-inline: 1.5rem;
+  padding-inline: var(--main-padding);
   padding-block: 1rem;
   font-size: 0.9rem;
   font-weight: 450;
@@ -75,7 +75,7 @@ nav a:nth-of-type(4) {
 header section {
   display: flex;
   align-items: center;
-  padding-inline: 1.5rem;
+  padding-inline: var(--main-padding);
   height: 438px;
   border-bottom: 1px solid var(--main-black);
   margin-top: 70px;
@@ -378,7 +378,15 @@ main {
   background-color: var(--main-green);
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
+  nav,
+  header section,
+  .trending,
+  .discover,
+  .articles {
+    padding-inline: 3rem;
+  }
+
   nav a:nth-of-type(2) {
     display: inline;
   }
@@ -407,4 +415,7 @@ main {
   .trending h3 {
     width: 100%;
   }
+}
+
+@media screen and (min-width: 992px) {
 }
