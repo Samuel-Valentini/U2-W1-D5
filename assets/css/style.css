@@ -24,7 +24,11 @@ header {
 }
 
 nav {
-  /* position: fixed; */
+  position: fixed;
+  background-color: var(--main-yellow);
+  z-index: 100;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -71,6 +75,7 @@ header section {
   padding-inline: 1.5rem;
   height: 438px;
   border-bottom: 1px solid var(--main-black);
+  margin-top: 70px;
 }
 
 header > section > div:nth-child(1) {
@@ -332,7 +337,7 @@ main {
   line-height: 1.3rem;
   padding-inline: 0.4rem;
   padding-block: 0.15rem;
-  border-radius: 30px;
+  border-radius: 25px;
   opacity: 60%;
 }
 
