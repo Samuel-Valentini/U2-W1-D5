@@ -164,7 +164,7 @@ main {
   margin-bottom: 0.8rem;
 }
 
-.trending span {
+.trending .transparent {
   opacity: 60%;
 }
 
@@ -376,4 +376,35 @@ main {
 
 .green-painter {
   background-color: var(--main-green);
+}
+
+@media screen and (min-width: 576px) {
+  nav a:nth-of-type(2) {
+    display: inline;
+  }
+  nav a:nth-of-type(3) {
+    display: inline;
+  }
+  nav a:nth-of-type(4) {
+    display: inline;
+  }
+
+  .repeated-m {
+    display: block;
+  }
+
+  .trending {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .trending > div {
+    width: 47%;
+  }
+
+  .trending h3 {
+    width: 100%;
+  }
 }
