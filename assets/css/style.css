@@ -243,3 +243,101 @@ main {
   font-size: 0.9rem;
   margin-block: 0.25rem;
 }
+
+.articles {
+  padding-inline: var(--main-padding);
+}
+
+.articles > div {
+  display: flex;
+  margin-bottom: 3rem;
+  align-items: center;
+}
+
+.articles > div > div:nth-child(2) > img {
+  width: 200px;
+  aspect-ratio: 400/267;
+  margin-left: 2rem;
+}
+
+.articles > div > div:nth-child(1) > div:nth-child(1) {
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.articles > div > div:nth-child(1) > div:nth-child(1) > img {
+  width: 20px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  margin-right: 0.5em;
+}
+
+.articles > div > div:nth-child(1) > div:nth-child(1):has(span) > img {
+  border-radius: 3px;
+}
+
+.articles > div > div:nth-child(1) > h4 {
+  padding-top: 0.7rem;
+  padding-bottom: 0.5rem;
+}
+
+.articles > div > div:nth-child(1) > h4 a {
+  text-decoration: none;
+  color: var(--main-black);
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.articles > div p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  opacity: 60%;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  /* height: 44px; */
+  /* max-width: 288px; */
+  /* white-space: pre-wrap; */
+  /* text-overflow: ellipsis; */
+  /* position: relative; */
+  margin-bottom: 0.5rem;
+}
+
+.articles > div > div:nth-child(1) > div:nth-child(4) {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8rem;
+}
+
+.articles .transparent {
+  opacity: 60%;
+}
+
+.articles > div > div:nth-child(1) > div:nth-child(4) > div:nth-child(5) {
+  display: flex;
+  align-items: center;
+  color: aqua;
+  gap: 5px;
+}
+
+.articles > div > div:nth-child(1) > div:nth-child(4) > div a {
+  color: var(--main-black);
+  text-decoration: none;
+  display: inline-block;
+  background-color: #e6e6e6;
+  line-height: 1.3rem;
+  padding-inline: 0.4rem;
+  padding-block: 0.15rem;
+  border-radius: 30px;
+  opacity: 60%;
+}
+
+.articles > div > div:nth-child(1) > div:nth-child(4) > div:nth-child(6) {
+  flex-grow: 1;
+  text-align: right;
+  opacity: 100%;
+}
