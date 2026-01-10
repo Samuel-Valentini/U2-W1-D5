@@ -38,6 +38,7 @@ nav {
   font-size: 0.9rem;
   font-weight: 450;
   border-bottom: 1px solid var(--main-black);
+  transition: background-color 1s linear 0s;
 }
 
 nav a {
@@ -345,4 +346,8 @@ main {
   flex-grow: 1;
   text-align: right;
   opacity: 100%;
+}
+
+.whitening {
+  background-color: white;
 }
