@@ -90,7 +90,7 @@ header > section > div:nth-child(1) {
 per evitare che il sottotitolo sia più 
 lungo del titolo negli schermi piccoli*/
 
-@media screen and (min-width: 490px) {
+@media screen and (min-width: 502px) {
   header > section > div:nth-child(1) {
     max-width: 440px;
   }
@@ -289,11 +289,17 @@ main {
   align-items: center;
 }
 
+.articles > div > div:nth-child(1) > div:nth-child(1) {
+  overflow: hidden;
+}
+
 .articles > div > div:nth-child(1) > div:nth-child(1) > img {
   width: 20px;
   aspect-ratio: 1/1;
   border-radius: 50%;
   margin-right: 0.5em;
+  object-fit: cover;
+  object-position: center;
 }
 
 .articles > div > div:nth-child(1) > div:nth-child(1):has(span) > img {
