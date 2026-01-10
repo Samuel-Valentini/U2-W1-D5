@@ -79,6 +79,7 @@ header section {
   height: 438px;
   border-bottom: 1px solid var(--main-black);
   margin-top: 70px;
+  width: 100%;
 }
 
 header > section > div:nth-child(1) {
@@ -267,6 +268,12 @@ main {
   display: flex;
   margin-bottom: 3rem;
   align-items: center;
+  justify-content: space-between;
+}
+
+.articles > div > div:nth-of-type(1) {
+  flex-grow: 1;
+  min-width: 281px;
 }
 
 .articles > div > div:nth-child(2) > img {
